@@ -1,5 +1,11 @@
 # Basic Git Scraper Template
 
+## Modifications Made
+
+My modifications were to scrape for the first headline on the Guest Column section of the Daily Pennsylvanian. I first modified to the URL scraped at to "https://www.thedp.com/section/guest-columns" and then changed the data point to look for "h3" designator which is used by the HTML displaying the article title, and then defining the class to be "standard-link." Afterwards, I did some data processing as I did not want the authors of the article (just seemed unethical to scrape for names) to ensure I just got the title of the article. I then logged and returned the processed data to be stored in the json file.
+
+##Template
+
 This template provides a starting point for **git scraping**—the technique of scraping data from websites and automatically committing it to a Git repository using workflows, [coined by Simon Willison](https://simonwillison.net/2020/Oct/9/git-scraping/).
 
 Git scraping helps create an audit trail capturing snapshots of data over time. It leverages Git's version control and a continuous integration's scheduling capabilities to regularly scrape sites and save data without needing to manage servers.
