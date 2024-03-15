@@ -30,7 +30,7 @@ def scrape_data_point():
         data_point = "" if target_element is None else target_element.text
         title = data_point.split("|")[1].strip()
         loguru.logger.info(f"Data point: {title}")
-        return data_point
+        return title
 
 
 if __name__ == "__main__":
